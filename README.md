@@ -1,20 +1,39 @@
 # 🤖 Robot Arm Control App
 
-Welcome to the Robot Arm Control System! This app allows you to control a robotic arm easily using a modern Flutter UI and ESP32 through a local server powered by XAMPP and SQL. Whether you're testing or performing tasks like pick & place, this system helps you control your robot with precision and ease. 💡
+A comprehensive mobile application for controlling a 6-DOF robot arm with real-time positioning, move management, and database integration.
 
-## 📱 Features
+## 🖼️ App Screenshots
 
-- 🎛️ Manual Motor Control – Use sliders to control up to 6 motors, each with angle values (0° to 180°).
+![APP PIC 1](https://github.com/user-attachments/assets/4944e024-7a42-45a4-9015-e0265f61576f)
 
-- 💾 Save & Run Moves – Save different robot positions like "Pick Object" or "Drop Position" and run them anytime.
 
-- 🌐 ESP32 Communication – The app connects to ESP32 using:
+## ✨ Features
 
--- get_run_pose ➡️ Sends the selected pose to the robot and starts execution.
+🎛️ Control Interface
 
--- update_statue 🔴 Updates the robot status as "Stopped".
+- 6 Joint Sliders (0-180°) with real-time value display
+- Reset Function - Instantly return all joints to 90° home position
+- Live Position Feedback - See exact joint angles as you adjust
 
-- 📶 Wi-Fi Connectivity – Communicates over your local Wi-Fi network via XAMPP and SQL.
+💾 Move Management
+
+- Save Custom Moves - Store complex positions with custom names
+- Database Integration - All moves persist in MySQL database
+- Load & Execute - Recall saved moves instantly
+- Delete Management - Remove unwanted moves from database
+
+🚀 Robot Control
+
+- Run Commands - Execute moves with HTTP communication to ESP32
+- Stop Function - Emergency stop for immediate halt
+- Status Tracking - Real-time running/stopped status display
+- JSON Communication - Structured data format for reliable transmission
+
+## 🏗️ System Architecture
+
+```
+📱 Flutter App → 🌐 XAMPP/PHP API → 🗄️ MySQL Database → 📡 ESP32 → 🤖 Robot Arm
+```
 
 ## 🧱 Tech Stack
 
@@ -28,9 +47,20 @@ Welcome to the Robot Arm Control System! This app allows you to control a roboti
 
 - ESP32 (Motor control hardware)
 
-## 🖼️ App Screenshots
+## 📊 Database Schema
 
-![APP PIC 1](https://github.com/user-attachments/assets/4944e024-7a42-45a4-9015-e0265f61576f)
+- robot_moves Table
+
+```sql
+id (INT) | name (VARCHAR) | joint1-6 (DECIMAL) | created_at (TIMESTAMP)
+```
+
+- robot_status Table
+
+```sql
+id (INT) | move_id (INT) | move_name (VARCHAR) | joint1-6 (DECIMAL) | status (INT) | updated_at (TIMESTAMP)
+```
+
 
 
 
