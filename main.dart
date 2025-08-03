@@ -256,8 +256,8 @@ class _ControlPanelScreenState extends State<ControlPanelScreen> {
   bool isRunning = false;
   Timer? _statusTimer;
 
-  // Replace with your actual server URL
-  final String baseUrl = 'http://192.168.100.5/robot_control';
+  // Replace with your actual server URL and ip adreess from cmd ipconfig
+  final String baseUrl = 'http://YOUR IP ADRESS/robot_control'; 
 
   @override
   void initState() {
@@ -822,4 +822,5 @@ class RobotMove {
       motor6: int.parse(json['motor6'].toString()),
     );
   }
+
 }
