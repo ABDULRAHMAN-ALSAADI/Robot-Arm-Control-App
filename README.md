@@ -30,7 +30,11 @@ Welcome to the Robot Arm Control System! This app allows you to control a roboti
 
 ## 🖼️ App Screenshots
 
-<img width="677" height="1013" alt="Screenshot 2025-08-03 185014" src="https://github.com/user-attachments/assets/edbe3619-8b46-4bf2-a00f-c09f96c47586" /> <img width="667" height="1011" alt="Screenshot 2025-08-03 185036" src="https://github.com/user-attachments/assets/b96a41c5-7e86-4025-ae95-69e421dd2620" /> <img width="668" height="1008" alt="Screenshot 2025-08-03 185110" src="https://github.com/user-attachments/assets/acdc6f6a-82ac-4f2b-8a95-f513218830a5" />
+<img width="677" height="1013" alt="Screenshot 2025-08-03 185014" src="https://github.com/user-attachments/assets/edbe3619-8b46-4bf2-a00f-c09f96c47586" /> 
+
+<img width="667" height="1011" alt="Screenshot 2025-08-03 185036" src="https://github.com/user-attachments/assets/b96a41c5-7e86-4025-ae95-69e421dd2620" /> 
+
+<img width="668" height="1008" alt="Screenshot 2025-08-03 185110" src="https://github.com/user-attachments/assets/acdc6f6a-82ac-4f2b-8a95-f513218830a5" />
 
 
 
